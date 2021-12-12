@@ -32,8 +32,8 @@ function validAnagrams (str1, str2) {
     for (let val of str2) {
         freqCount2[val] = (freqCount2[val] || 0) + 1;
     }
-    // console.log(freqCount1)
-    // console.log(freqCount2)
+    console.log(freqCount1)
+    console.log(freqCount2)
     
     for (let val in freqCount1) {
         if (!(val in freqCount2)) {
