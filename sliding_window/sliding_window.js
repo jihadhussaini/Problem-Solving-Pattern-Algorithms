@@ -20,9 +20,14 @@ function maxSubarraySum(arr, num) {
     for (let i = 0; i < num; i++) {
         maxSum += arr[i];
     }
+    // console.log(maxSum);
+
     tempSum = maxSum;
+    // console.log(tempSum);
     for (let i = num; i < arr.length; i++) {
         tempSum = tempSum - arr[i - num] + arr[i];
+        // console.log(`tempSum = ${tempSum}`);
+
         maxSum = Math.max(maxSum, tempSum);
     }
     return maxSum;
