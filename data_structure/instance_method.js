@@ -16,7 +16,7 @@ class Student {
         }
         return `${this.firstName} ${this.lastName} has been late ${this.tardies} times`
     }
-    addScore() {
+    addScore(score) {
         this.scores.push(score);
         return this.scores;
     }
@@ -29,5 +29,14 @@ class Student {
 let firstStudent = new Student("Jihad", "Akbar", 10);
 let secondStudent = new Student("Faiza", "Ummul", 7);
 
+// console.log(firstStudent);
+// console.log(secondStudent);
+console.log(firstStudent.fullName());
+console.log(firstStudent.markLate());
+console.log(firstStudent.markLate());
+console.log(firstStudent.markLate());
+console.log(firstStudent.markLate());
+firstStudent.addScore(90);
+firstStudent.addScore(95);
+console.log(firstStudent.calculateAverage());
 console.log(firstStudent);
-console.log(secondStudent);
